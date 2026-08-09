@@ -135,10 +135,10 @@ Create a `.env` file based on `.env.example`.
 
 2️⃣ **Create a `.env` file based on `.env.example`.
 
-    ```bash
+   ```bash
    cp .env.example .env
    ```
-   
+    
    ⚠️⚠️
    > Note: a \`.env.example\` file with sample values is included. Copy it to 
    > \`.env\` before running the project. It doesn't contain any real sensitive 
@@ -210,9 +210,9 @@ The project uses Pytest for automated testing.
 
 Run all tests with:
 
-    ```bash
-    docker exec -it helpdesk-api pytest -v   
-    ```
+   ```bash
+   docker exec -it helpdesk-api pytest -v   
+   ```
 
 Tests cover, among other things:
 
