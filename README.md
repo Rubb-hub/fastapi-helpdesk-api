@@ -86,7 +86,6 @@ PostgreSQL
 ```
 
 
-
 ## Requirements
 
 ✅ Run the project using Docker:
@@ -101,7 +100,7 @@ Create a `.env` file based on `.env.example`.
 
 
 
-## Running API 🐳 Docker
+## Running API 🐳
 
 1️⃣ **Clonar el repositorio:**
 
@@ -117,9 +116,9 @@ Create a `.env` file based on `.env.example`.
    ```
     
     ⚠️⚠️
-    > Note: a \`.env.example\` file with sample values is included. Copy it to 
-    > \`.env\` before running the project. It doesn't contain any real sensitive 
-    > information, but this separation is kept as a good practice.
+    Note: a \`.env.example\` file with sample values is included. Copy it to 
+    \`.env\` before running the project. It doesn't contain any real sensitive 
+    information, but this separation is kept as a good practice.
 
 
 3️⃣ **Construir y levantar los contenedores:**
@@ -133,9 +132,11 @@ Create a `.env` file based on `.env.example`.
     - FastAPI application
     - PostgreSQL database
 
-    💡 Database migrations are automatically applied during application startup. (Alembic/versions/cdd7e7da1f7e_initial_scheme-py)
+    💡 Database migrations are automatically applied during application startup. ->
+      (Alembic/versions/cdd7e7da1f7e_initial_scheme-py)
 
-    💡 Two users are automatically created during application startup. (App/seed_tables.py)
+    💡 Two users are automatically created during application startup. ->
+      (App/seed_tables.py)
 
 
 4️⃣ **The API will be available at:**
@@ -150,17 +151,19 @@ Create a `.env` file based on `.env.example`.
 ## Demo Users
 
     ✅ User:ExpAdmin / Pass:expadmin / Rol:Admin
-    --> A user that always exists for testing purposes. These credentials are intended exclusively for demonstration purposes and must never be used in a production environment.
+    --> A user that always exists for testing purposes. 
+      These credentials are intended exclusively for demonstration purposes and must never be used in a production environment.
 
     ✅ User:Admin / Pass:*AutomaticGeneration / Rol:Admin 
-    --> A user with a randomly generated password that is displayed only during this process. This simulates the realistic creation of a user as part of the migration.
+    --> A user with a randomly generated password that is displayed only during this process. 
+      This simulates the realistic creation of a user as part of the migration.
 
 
 ## Authentication
 
 ⚠️ The API uses JWT Bearer authentication. ⚠️ 
 
-**Step1
+**Step - 1**
     Get Token -> 
         Post .../auth/login (JSON)
 
@@ -173,8 +176,8 @@ Create a `.env` file based on `.env.example`.
 
 Response: ```text Authorization: Bearer <access_token> ```
 
-**Step2
-    Access Endpoint using correspond json and token from step1
+**Step - 2**
+    Access Endpoint using correspond json and token from Step1
 
     Header: Content-Type / <application/json>
             Authorization / Bearer <Token>   
