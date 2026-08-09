@@ -133,7 +133,7 @@ Create a `.env` file based on `.env.example`.
    cd Helpdesk-API
    ```
 
-2️⃣ **Create a `.env` file based on `.env.example`.
+2️⃣ **Create a `.env` file based on `.env.example`:**
 
    ```bash
    cp .env.example .env
@@ -161,7 +161,7 @@ Create a `.env` file based on `.env.example`.
     💡 Two users are automatically created during application startup. (App/seed_tables.py)
 
 
-4️⃣ **The API will be available at:
+4️⃣ **The API will be available at:**
 
     http://localhost:8000
     
