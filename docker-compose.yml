@@ -37,7 +37,9 @@ services:
     restart: unless-stopped #Autorun on server restart
 
     depends_on:
-      - database
+  
+      database:
+        condition: service_healthy
 
     working_dir: /app
 
