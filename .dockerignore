@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+
+# Git
+.git/
+.gitignore
+
+# Pytest
+.pytest_cache/
+test/__pycache__/
+
+# Ruff
+.ruff_cache/
+
+# Environment variables
+.env
+.env.docker
+.env.test
+
+# Alembic
+alembic/__pycache__/
+alembic/versions/__pycache__/
+*.pyc
+
+# App
+app/__pycache__/
+
+# Extra
+.old

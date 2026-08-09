@@ -1,0 +1,63 @@
+
+services:
+
+  #Run HelpDesk DataBase PostgreSQL Service
+  database: #Create Container 
+    image: postgres:17 #Download Postgre img
+
+    container_name: helpdesk-database #Name -docker ps
+
+    restart: unless-stopped #Autorun on server restart
+
+    environment: #Credentials
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+
+    ports:
+      - "5433:5432" #Local Port | Container port
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data #Save Data
+
+    healthcheck: #This is a health check for the database service. It uses the pg_isready command to check if the PostgreSQL server is ready to accept connections. 
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  #Run HelpDesk Api
+  api: #Create Container 
+
+    build: . #Build using dockerfile inside project
+
+    container_name: helpdesk-api #Name -docker ps
+
+    restart: unless-stopped #Autorun on server restart
+
+    depends_on:
+      - database
+
+    working_dir: /app
+
+    volumes: #Mount folder from container
+      - .:/app
+
+    command: 
+      # 1 -Create tables from alembic/versions/initial_scheme  ---- 2 -Seed tables with default data ---- 3 - Gives few sconds to get de bbdd deployed ---- 4 -Run uvicorn server
+      sh -c "alembic upgrade head
+      && 
+      python -m app.seed_tables
+      &&
+      uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+      #Doble camma is giga important here. Dont separete the two instrucctions by "" this defines the execution order first alembic update then container listen uvicorv
+
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - .env
+
+volumes:
+  postgres_data:
