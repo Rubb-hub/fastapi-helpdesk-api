@@ -139,10 +139,10 @@ Create a `.env` file based on `.env.example`.
    cp .env.example .env
    ```
     
-   ⚠️⚠️
-   > Note: a \`.env.example\` file with sample values is included. Copy it to 
-   > \`.env\` before running the project. It doesn't contain any real sensitive 
-   > information, but this separation is kept as a good practice.
+      ⚠️⚠️
+    > Note: a \`.env.example\` file with sample values is included. Copy it to 
+    > \`.env\` before running the project. It doesn't contain any real sensitive 
+    > information, but this separation is kept as a good practice.
 
 
 3️⃣ **Construir y levantar los contenedores:**
