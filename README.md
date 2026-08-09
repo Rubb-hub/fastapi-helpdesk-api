@@ -105,8 +105,8 @@ Create a `.env` file based on `.env.example`.
 1️⃣ **Clonar el repositorio:**
 
    ```bash
-   git clone https://github.com/Rubb-hub/Helpdesk-API.git
-   cd Helpdesk-API
+   git clone https://github.com/Rubb-hub/fastapi-helpdesk-api.git
+   cd fastapi-helpdesk-api
    ```
 
 2️⃣ **Create a `.env` file based on `.env.example`:**
@@ -124,7 +124,7 @@ Create a `.env` file based on `.env.example`.
 3️⃣ **Construir y levantar los contenedores:**
 
    ```bash
-   docker-compose up --build 
+   docker-compose up
    ```
 
     🚀Docker Compose starts:🚀
@@ -141,6 +141,7 @@ Create a `.env` file based on `.env.example`.
 
 4️⃣ **The API will be available at:**
 
+    Conection:
     http://localhost:8000
     
     Swagger documentation:
@@ -155,7 +156,7 @@ Create a `.env` file based on `.env.example`.
       These credentials are intended exclusively for demonstration purposes and must never be used in a production environment.
 
     ✅ User:Admin / Pass:*AutomaticGeneration / Rol:Admin 
-    --> A user with a randomly generated password that is displayed only during this process. 
+    --> A user with a randomly generated password that is displayed only during the docker-compose up process. 
       This simulates the realistic creation of a user as part of the migration.
 
 
