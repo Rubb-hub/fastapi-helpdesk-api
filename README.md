@@ -66,49 +66,26 @@ The project has been developed with FastAPI and PostgreSQL, following a layered 
 
 The project follows a layered architecture to separate responsibilities.
 
+```text
 Client
-   │
-   ▼
-Routers
-   │
-   ▼
-Services
-   │
-   ▼
-SQLAlchemy
-   │
-   ▼
+  │
+  ▼
+Routers ───────────────► Authentication
+  │                          │
+  ▼                          ▼
+Services ───────────────► Authorization
+  │
+  ▼
+CRUD / Data Access
+  │
+  ▼
+SQLAlchemy 2.0
+  │
+  ▼
 PostgreSQL
-
-## Project Structure
-
-app/
-├── auth/
-├── crud/
-├── routers/
-├── services/
-├── config.py
-├── database.py
-├── models.py
-├── schemas.py
-├── seed_tables.py
-└── main.py
-
-tests/
-├── conftest.py
-├── test_auth.py
-└── test_incidents.py
+```
 
 
-alembic/
-├── versions/
-└── env.py
-
-alembic.ini
-Dockerfile
-docker-compose.yml
-requirements.txt
-pyproject.toml
 
 ## Requirements
 
@@ -124,7 +101,7 @@ Create a `.env` file based on `.env.example`.
 
 
 
-## Running API
+## Running API 🐳 Docker
 
 1️⃣ **Clonar el repositorio:**
 
@@ -225,3 +202,37 @@ Tests cover, among other things:
 - Input validation
 - Database persistence
 - Error handling
+
+
+## Project Structure
+
+```text
+app/
+├── auth/
+├── crud/
+├── routers/
+├── services/
+├── config.py
+├── database.py
+├── models.py
+├── schemas.py
+├── seed_tables.py
+└── main.py
+
+tests/
+├── conftest.py
+├── test_auth.py
+└── test_incidents.py
+
+
+alembic/
+├── versions/
+└── env.py
+
+alembic.ini
+Dockerfile
+docker-compose.yml
+requirements.txt
+pyproject.toml
+
+```
