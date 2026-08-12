@@ -1,10 +1,3 @@
-# AUTHENITCATION TEST
-"""def test_login_success():
-def test_login_wrong_password():
-def test_login_unknown_user():
-"""
-
-
 # TEST EXISTING USER - OK LOGIN
 def test_login_known_user(client, test_user):
 

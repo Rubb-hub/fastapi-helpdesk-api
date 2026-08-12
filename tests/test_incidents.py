@@ -1,6 +1,3 @@
-# CRUD TESTS
-""" """
-
 
 # --------------POST--------------------POST------------------ POST ---------------------------
 # TEST INCIDENTS POST -- INCIDENT CREATION

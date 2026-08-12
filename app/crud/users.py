@@ -1,7 +1,3 @@
-"""get_user_by_login()
-
-create_user()
-"""
 
 from sqlalchemy.orm import Session
 
