@@ -148,9 +148,7 @@ Create a `.env` file based on `.env.example`.
 
 ## Running API  whit TERRAFORM in AWS (Cloud)
 
-1️⃣ **Check**
-
-  🔗 [terraform-fastapi-helpdesk-infrastructure](https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure)
+1️⃣ **Check** -->  🔗 [terraform-fastapi-helpdesk-infrastructure](https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure)
 
 ## Demo Users
 
