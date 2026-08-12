@@ -156,8 +156,6 @@ Create a `.env` file based on `.env.example`.
 
   The infrastructure configuration is maintained in a separate repository:
 
-     🚀 **Check** -->  🔗 [terraform-fastapi-helpdesk-infrastructure](https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure)
-
      Terraform is responsible for provisioning the required AWS infrastructure, including:
 
      - VPC
@@ -166,6 +164,8 @@ Create a `.env` file based on `.env.example`.
      - Route Table
      - Security Group
      - EC2 instance
+
+   🚀 **Check** -->  🔗 [terraform-fastapi-helpdesk-infrastructure](https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure)
 
 ## Demo Users
 
