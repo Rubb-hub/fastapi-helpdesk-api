@@ -31,6 +31,7 @@ The project has been developed with FastAPI and PostgreSQL, following a layered 
 | Python            | Programming language |
 | FastAPI           | REST API framework |
 | PostgreSQL        | Relational database |
+| Nginx             | Reverse proxy and HTTP server |
 | SQLAlchemy 2.0    | ORM |
 | Pydantic          | Data validation |
 | PyJWT             | JWT authentication |
@@ -68,6 +69,9 @@ The project follows a layered architecture to separate responsibilities.
 
 ```text
 Client
+  │
+  ▼
+Nginx
   │
   ▼
 Routers ───────────────► Authentication
@@ -140,15 +144,28 @@ Create a `.env` file based on `.env.example`.
 4️⃣ **The API will be available at:**
 
     Conection:
-    http://localhost:8000
+    http://localhost
     
     Swagger documentation:
-    http://localhost:8000/docs
+    http://localhost/docs
     
 
-## Running API  whit TERRAFORM in AWS (Cloud)
+## AWS Deployment whit TERRAFORM (Cloud)
 
-1️⃣ **Check** -->  🔗 [terraform-fastapi-helpdesk-infrastructure](https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure)
+  The application can also be deployed automatically to AWS using Terraform.
+
+  The infrastructure configuration is maintained in a separate repository:
+
+     🚀 **Check** -->  🔗 [terraform-fastapi-helpdesk-infrastructure](https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure)
+
+     Terraform is responsible for provisioning the required AWS infrastructure, including:
+
+     - VPC
+     - Public subnet
+     - Internet Gateway
+     - Route Table
+     - Security Group
+     - EC2 instance
 
 ## Demo Users
 
