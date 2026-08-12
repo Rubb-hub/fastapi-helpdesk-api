@@ -165,7 +165,7 @@ Create a `.env` file based on `.env.example`.
      - Security Group
      - EC2 instance
 
-   🚀 **Check** -->  🔗 [terraform-fastapi-helpdesk-infrastructure](https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure)
+   🚀 **Check** -->  Next Update
 
 ## Demo Users
 
