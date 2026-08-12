@@ -88,7 +88,7 @@ PostgreSQL
 
 ## Requirements
 
-  # Run the project using Docker (LOCALY): ✅
+✅ Run the project using Docker (Localy):
 
 - Docker
 - Docker Compose
@@ -98,7 +98,7 @@ PostgreSQL
 
 Create a `.env` file based on `.env.example`.
 
-# Run the project in AWS using TERRAFORM  (IaC) (CLOUD): ✅
+✅ Run the project in AWS using TERRAFORM  (IaC) (Cloud): 
 
   Check -> https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure.git
 
