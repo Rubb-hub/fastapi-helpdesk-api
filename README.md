@@ -98,12 +98,7 @@ PostgreSQL
 
 Create a `.env` file based on `.env.example`.
 
-✅ Run the project in AWS using TERRAFORM  (IaC) (Cloud): 
-
-  Check -> https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure.git
-
-
-## Running API 🐳 whit Docker (LOCALY)
+## Running API 🐳 whit Docker (Localy)
 
 1️⃣ **Clonar el repositorio:**
 
@@ -151,6 +146,13 @@ Create a `.env` file based on `.env.example`.
     http://localhost:8000/docs
     
 
+## Running API  whit TERRAFORM in AWS (Cloud)
+
+1️⃣ **Check**
+
+  ```bash
+   chttps://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure.git
+   ```
 
 ## Demo Users
 
