@@ -150,9 +150,7 @@ Create a `.env` file based on `.env.example`.
 
 1️⃣ **Check**
 
-  ```bash
-   chttps://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure.git
-   ```
+  🔗 [terraform-fastapi-helpdesk-infrastructure](https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure)
 
 ## Demo Users
 
