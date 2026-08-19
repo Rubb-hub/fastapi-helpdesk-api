@@ -150,7 +150,7 @@ Create a `.env` file based on `.env.example`.
     http://localhost/docs
     
 
-## AWS Deployment whit TERRAFORM (Cloud) <img src="imgs/aws_logo.svg" alt="architecture" width="50" /> <img src="imgs/terraform_logo.svg" alt="architecture" width="50" />
+## AWS Deployment whit TERRAFORM (Cloud)                        <img src="imgs/aws_logo.svg" alt="architecture" width="50" /> <img src="imgs/terraform_logo.svg" alt="architecture" width="40" />
 
   The application can also be deployed automatically to AWS using Terraform.
 
