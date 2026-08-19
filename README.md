@@ -150,22 +150,11 @@ Create a `.env` file based on `.env.example`.
     http://localhost/docs
     
 
-## AWS Deployment whit TERRAFORM (Cloud)
+## AWS Deployment whit TERRAFORM (Cloud) <img src="imgs/aws_logo.svg" alt="architecture" width="50" /> <img src="imgs/terraform_logo.svg" alt="architecture" width="50" />
 
   The application can also be deployed automatically to AWS using Terraform.
 
-  The infrastructure configuration is maintained in a separate repository:
-
-     Terraform is responsible for provisioning the required AWS infrastructure, including:
-
-     - VPC
-     - Public subnet
-     - Internet Gateway
-     - Route Table
-     - Security Group
-     - EC2 instance
-
-   🚀 **Check** -->  Next Update
+   🚀 **Check** -->  🔗[terraform-fastapi-helpdesk-infrastructure](https://github.com/Rubb-hub/terraform-fastapi-helpdesk-infrastructure)
 
 ## Demo Users
 
