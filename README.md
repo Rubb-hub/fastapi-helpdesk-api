@@ -1,5 +1,7 @@
 # Helpdesk API
 
+[![TEST](https://github.com/Rubb-hub/fastapi-helpdesk-api/actions/workflows/test.yml/badge.svg)](https://github.com/Rubb-hub/fastapi-helpdesk-api/actions/workflows/test.yml)
+
 REST API for managing helpdesk incidents, users and authentication > Production-oriented REST API for helpdesk incident management.
 
 The project has been developed with FastAPI and PostgreSQL, following a layered architecture and including authentication with JWT, data validation, automated tests, database migrations and Docker containerization.
@@ -191,10 +193,11 @@ Response: ```text Authorization: Bearer <access_token> ```
             Authorization / Bearer <Token>   
 
 
-## Continuous Integration
+## Continuous Integration - CI
 
-The project uses GitHub Actions for automated testing on every push and pull request. (Pytest)
--> All fixtures used in tests are located in conftest.py
+The project uses GitHub Actions to automatically run the Pytest test suite on every push and pull request.
+
+**Test fixtures are managed through tests/conftest.py.**
 
 Tests cover, among other things:
 
