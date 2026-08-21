@@ -8,7 +8,7 @@ jobs:
   tests:
     runs-on: ubuntu-latest
 
-    services:
+    services: #We need to add a postgres service to run our tests against a database
       postgres:
         image: postgres:17
         env:
@@ -17,15 +17,15 @@ jobs:
           POSTGRES_PASSWORD: postgres
         ports:
           - 5432:5432
-        options: >-
-          --health-cmd "pg_isready -U postgres -d helpdesk_test_github"
+        options: >- #Check if the database is ready before running tests
+          --health-cmd "pg_isready -U postgres -d helpdesk_test_github" 
           --health-interval 5s
           --health-timeout 5s
           --health-retries 5
 
-    steps:
+    steps: #Download the app code, set up Python, install dependencies, and run tests
       - name: Checkout repository
-        uses: actions/checkout@v4º
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
