@@ -191,16 +191,10 @@ Response: ```text Authorization: Bearer <access_token> ```
             Authorization / Bearer <Token>   
 
 
-## Testing
+## Continuous Integration
 
-The project uses Pytest for automated testing.
+The project uses GitHub Actions for automated testing on every push and pull request. (Pytest)
 -> All fixtures used in tests are located in conftest.py
-
-Run all tests with:
-
-   ```bash
-   docker exec -it helpdesk-api pytest -v   
-   ```
 
 Tests cover, among other things:
 
@@ -213,6 +207,12 @@ Tests cover, among other things:
 - Input validation
 - Database persistence
 - Error handling
+
+It can also be executed locally:
+
+   ```bash
+   docker exec -it helpdesk-api pytest -v   
+   ```
 
 
 ## Project Structure
