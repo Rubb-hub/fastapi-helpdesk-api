@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/Rubb-hub/fastapi-helpdesk-api/actions/workflows/test.yml/badge.svg)](https://github.com/Rubb-hub/fastapi-helpdesk-api/actions/workflows/test.yml)
 ![Tests](https://img.shields.io/badge/tests-pytest-orange?logo=pytest&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?logo=postgresql&logoColor=white)
 
